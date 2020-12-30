@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <title>C.V</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm jps-col-2">
+        <img src="codeur.jpg">
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="container jps-cv">
+    <div id="app">
+      <h1 v-for="me in me">Bonjour, je m'appel {{me.firstName}} {{me.lastName}}.</h1>
+      <br>
+      <ul v-for="exp in exp">
+        <span><b>{{exp.name}} : Recherche stage en tant que {{exp.post}} pour la période du {{exp.dateA}} à
+            {{exp.dateD}}.</b></span>
+      </ul>
+      <h2 v-for="Formation">Formation:</h2>
+      <ul v-for="formation in formation">
+        <li>{{formation.name}} - {{formation.titre}}, {{formation.dateA}} à {{formation.dateD}}</li>
+      </ul>
+      <h2 v-for="Compétences">Compétences:</h2>
+      <ul v-for="skills in skills">
+        <li>{{skills}}</li>
+      </ul>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
