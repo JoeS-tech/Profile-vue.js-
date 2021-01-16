@@ -20,15 +20,19 @@
   <br>
   <div class="container jps-cv">
     <div id="app">
-      <h1 v-for="me in me">Bonjour, je m'appelle {{me.firstName}} {{me.lastName}}.</h1>
+      <h1 v-for="me in me">Bonjour, je m'appelle {{me.firstName}} {{me.lastName}}.
+        <hr>
+        Je recherche un stage en
+        développement web et mobile full-stack.
+      </h1>
       <br>
       <ul v-for="exp in exp">
-        <span><b>{{exp.name}} : Recherche un stage en tant que {{exp.post}} pour la période du {{exp.dateA}} à
-            {{exp.dateD}}.</b></span>
+        <h3>Projet réalisé: </h3>
+        <li><b>{{exp.project}} - {{exp.Tasks}} </b></li>
       </ul>
       <h2 v-for="Formation">Formation:</h2>
       <ul v-for="formation in formation">
-        <li><b>{{formation.name}} - {{formation.titre}}, {{formation.dateA}} à {{formation.dateD}}</b></li>
+        <li><b>{{formation.name}} - {{formation.titre}} du {{formation.dateA}} au {{formation.dateD}}.</b></li>
       </ul>
       <h2 v-for="Compétences">Compétences:</h2>
       <ul v-for="skills in skills">
