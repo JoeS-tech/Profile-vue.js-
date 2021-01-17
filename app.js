@@ -12,15 +12,15 @@ var vm = new Vue({
       },
       {
         project: "Projet Disquaire",
-        Tasks: "Créer une base de donnée intégré au site web utilisant php et mySQL. Toutes les données sont stockées dans MySQL pour accéder au site web.",
+        Tasks: "Créer une base de données intégré au site web utilisant php et mySQL. Toutes les données sont stockées dans MySQL pour accéder au site web.",
       },
       {
         project: "Reminder (projet Laravel)",
-        Tasks: "Un mise en forme de site web (Trello-like) a été adapté. Utilisant une base de donnée mySQL avec les commandes en Laravel, on a pu créer un tableau de bord personnalisable par profile.",
+        Tasks: "Une mise en forme de site web (Trello-like) a été adapté. Utilisant une base de données mySQL avec les commandes en Laravel, on a pu créer un tableau de bord personnalisable par profile.",
       },
       {
         project: "Reeasy",
-        Tasks: "Une application mobile utilisant la géolocalisation a été adapté avec Laravel en intégrant vue.js pour donner un concept d’app web et mobile.",
+        Tasks: "On a adapté une application mobile utilisant un API de géolocalisation avec le Framework Laravel et avec vue.js en générant des notes.",
       },
     ],
     formation: [
